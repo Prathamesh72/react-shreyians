@@ -120,7 +120,7 @@ function App() {
       <div className="parent">
         {jobOpenings.map((elem, index) => {
           return (
-            <div>
+            <div key={index}>
               <Card
                 brandLogo={elem.brandLogo}
                 companyName={elem.companyName}
